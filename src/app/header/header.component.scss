@@ -1,0 +1,31 @@
+.header{
+  z-index: 999;
+}
+
+.logo{
+  position: absolute;
+  width: 60px;
+}
+.btn{
+  --bs-btn-color: #fff;
+}
+
+.btn:hover, .btn-active{
+  --bs-btn-color: #fff;
+    --bs-btn-bg: #1db954;
+    --bs-btn-border-color: #1db954;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #198c3e;
+    --bs-btn-hover-border-color: #198c3e;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #198c3e;
+    --bs-btn-active-border-color: #198c3e;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #1db954;
+    --bs-btn-disabled-border-color: #1db954;
+}
+li.nav-item {
+  margin: 0 0.2rem 0 0.2rem;
+}

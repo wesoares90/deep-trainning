@@ -1,0 +1,31 @@
+.home-container {
+    background-image: url('https://blog.touchandgo.com.br/wp-content/uploads/2020/03/Quais-sao-os-melhores-Equipamentos-para-Crossfit.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+  }
+  
+  .fade-in {
+    opacity: 0.5;
+    animation: fadeIn 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  

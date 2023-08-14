@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/scss/bootstrap.scss";
+
+
+body {
+    background-color: #191414;
+}
+
+.header{
+    z-index: 999;
+    position: relative;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+}

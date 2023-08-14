@@ -1,0 +1,48 @@
+h1.mt-4 {
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+.list-group-item {
+    background-color: #fff;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.list-group-item h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.list-group-item p {
+    margin: 0;
+    color: #777;
+}
+
+.btn-primary {
+    background-color: #1db954;
+    border: none;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.btn-primary:hover {
+    background-color: #198c3e;
+}
+
+
+@media (max-width: 768px) {
+    h4 {
+        margin: 10px 0 3px 0 !important;
+    }
+
+    .img-thumb {
+        padding-top: calc(var(--bs-gutter-x) * 0.5);
+    }
+}

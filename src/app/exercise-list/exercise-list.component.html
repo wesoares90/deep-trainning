@@ -1,0 +1,24 @@
+<app-header class="header" [active]="'Exercicíos'"></app-header>
+<div class="container">
+    <h1 class="mt-4">Lista de exercícios</h1>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Buscar" [(ngModel)]="searchText"
+            (ngModelChange)="checkInputLength()">
+    </div>
+    <ul class="list-group mt-4">
+        <li class="list-group-item" *ngFor="let exercise of filteredExercises">
+            <div class="row align-items-center">
+                <div class="col-xs-12 col-md-2 img-thumb">
+                    <img [src]="exercise.image" alt="Exercise Image" class="img-fluid">
+                </div>
+                <div class="col-xs-12 col-md-8">
+                    <h4>{{ exercise.title }}</h4>
+                    <p>{{ exercise.description }}</p>
+                </div>
+                <div class="col-xs-12 col-md-2">
+                    <button class="btn rounded-pill btn-primary" routerLink="{{'../exercicio'}}">Play</button>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
