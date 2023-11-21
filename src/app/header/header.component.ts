@@ -12,25 +12,28 @@ interface Menu {
 })
 export class HeaderComponent {
 
+  btnMobile = false;
+
   menu: Menu[] = [
     {
-      title: 'Home',
+      title: 'Início',
       link:'/'
     },
     {
-      title: 'Exercicíos',
-      link:'/lista-de-exercicios'
+      title: 'Treinos',
+      link:'/grupo-muscular'
     },
     {
-      title: 'Ranking',
+      title: 'Nossa equipe',
       link:'/ranking'
     },
     {
-      title: 'Treinos',
+      title: 'Contrate um personal',
       link:'/treinos'
     }
   ];
 
   @Input() active = '';
+  @Input() btnback =  '';
 
 }

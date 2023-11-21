@@ -7,12 +7,15 @@ h1.mt-4 {
     border: none;
     border-radius: 10px;
     margin-bottom: 20px;
+    padding: 0 10px 0 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .list-group-item img {
-    max-width: 100%;
-    border-radius: 8px;
+    max-width: 160px;
+    margin-right: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .list-group-item h4 {
@@ -26,23 +29,68 @@ h1.mt-4 {
 }
 
 .btn-primary {
-    background-color: #1db954;
+    background-color: #e0cf01;
     border: none;
     width: 100%;
-    margin: 10px 0 10px 0;
 }
 
 .btn-primary:hover {
-    background-color: #198c3e;
+    background-color: #bbad09;
 }
 
 
-@media (max-width: 768px) {
-    h4 {
-        margin: 10px 0 3px 0 !important;
+.bg-search{
+    height: 160px;
+    width: 100%;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-size: cover !important;
+        z-index: -1;
+        opacity: 0.5;
     }
+}
 
-    .img-thumb {
-        padding-top: calc(var(--bs-gutter-x) * 0.5);
+.bg-todos{
+    &::before{
+        background: url('/assets/img/bg-todos.jpeg') center;
+    }
+}
+
+.bg-peito{
+    &::before{
+        background: url('/assets/img/bg-peito.jpeg') center;
+    }
+}
+.bg-perna{
+    &::before{
+        background: url('/assets/img/bg-perna.jpeg') center;
+    }
+}
+.bg-ombro{
+    &::before{
+        background: url('/assets/img/bg-ombro.jpeg') center;
+    }
+}
+.bg-costa{
+    &::before{
+        background: url('/assets/img/bg-costa.jpeg') center;
+    }
+}
+.bg-biceps{
+    &::before{
+        background: url('/assets/img/bg-biceps.jpeg') center;
+    }
+}
+.bg-triceps{
+    &::before{
+        background: url('/assets/img/bg-triceps.jpeg') center;
+    }
+}
+.bg-alongamento{
+    &::before{
+        background: url('/assets/img/bg-alongamento.jpeg') center;
     }
 }

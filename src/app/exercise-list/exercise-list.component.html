@@ -1,24 +1,28 @@
-<app-header class="header" [active]="'Exercicíos'"></app-header>
-<div class="container">
-    <h1 class="mt-4">Lista de exercícios</h1>
+<app-header class="header" [active]="'Treinos'"></app-header>
+<div class="bg-search bg-{{id}} p-3 text-center">
+    <h1 class="mt-4 text-uppercase" *ngIf="id === 'todos'">{{id}} os exercícios</h1>
+    <h1 class="mt-4 text-uppercase" *ngIf="id !== 'todos'">{{id}}</h1>
     <div class="input-group mb-3">
-        <input type="text" class="form-control" placeholder="Buscar" [(ngModel)]="searchText"
+        <input type="text" class="form-control" placeholder="Busque aqui seu exercício" [(ngModel)]="searchText"
             (ngModelChange)="checkInputLength()">
     </div>
+</div>
+<div class="container">
     <ul class="list-group mt-4">
+        <h1 class="mt-4 text-center" *ngIf="filteredExercises.length === 0">poxa, nao tem esse exercício <p>:(</p></h1>
         <li class="list-group-item" *ngFor="let exercise of filteredExercises">
-            <div class="row align-items-center">
-                <div class="col-xs-12 col-md-2 img-thumb">
+            <div class="d-flex">
+                <div class="">
                     <img [src]="exercise.image" alt="Exercise Image" class="img-fluid">
                 </div>
-                <div class="col-xs-12 col-md-8">
+                <div class="d-flex align-content-center flex-wrap">
                     <h4>{{ exercise.title }}</h4>
-                    <p>{{ exercise.description }}</p>
+                    <!-- <p>{{ exercise.description }}</p> -->
                 </div>
-                <div class="col-xs-12 col-md-2">
-                    <button class="btn rounded-pill btn-primary" routerLink="{{'../exercicio'}}">Play</button>
+                <div class="ms-auto d-flex align-content-center flex-wrap">
+                    <button class="btn rounded-pill btn-primary" routerLink="{{'../../exercicio'}}">Play</button>
                 </div>
-            </div>
+              </div>
         </li>
     </ul>
 </div>

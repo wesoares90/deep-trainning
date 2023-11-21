@@ -1,0 +1,73 @@
+ul{
+    padding: 0;
+    li{
+        height: 160px;
+        width: 100%;
+        margin-top: 15px;
+        position: relative;
+        list-style: none;
+        &::before{
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.3;
+        }
+        a{
+            color: #e0cf01;
+            font-size: 36px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+    }
+}
+
+.bg-todos{
+    &::before{
+        background: url('/assets/img/bg-todos.jpeg') center;
+    }
+}
+
+.bg-peito{
+    &::before{
+        background: url('/assets/img/bg-peito.jpeg') center;
+    }
+}
+.bg-perna{
+    &::before{
+        background: url('/assets/img/bg-perna.jpeg') center;
+    }
+}
+.bg-ombro{
+    &::before{
+        background: url('/assets/img/bg-ombro.jpeg') center;
+    }
+}
+.bg-costa{
+    &::before{
+        background: url('/assets/img/bg-costa.jpeg') center;
+    }
+}
+.bg-biceps{
+    &::before{
+        background: url('/assets/img/bg-biceps.jpeg') center;
+    }
+}
+.bg-triceps{
+    &::before{
+        background: url('/assets/img/bg-triceps.jpeg') center;
+    }
+}
+.bg-alongamento{
+    &::before{
+        background: url('/assets/img/bg-alongamento.jpeg') center;
+    }
+}

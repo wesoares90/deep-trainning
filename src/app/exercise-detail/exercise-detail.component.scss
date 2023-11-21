@@ -1,0 +1,31 @@
+.grid-table {
+    border: 1px solid  darkgray;
+    border-radius: 5px;
+    .header {
+        background-color: darkgrey;
+        color: #fff;
+        padding: 0px 10px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .line {
+        display: flex;
+        padding: 2px 10px;
+        justify-content: space-between;
+        color: #fff;
+        border-top: 1px solid darkgrey;
+    }
+    strong{
+        color: cadetblue;
+    }
+
+}
+.gif-card{
+    border-radius: 10px;
+}
+.btn{
+    background: #e0cf01;
+    color: #fff;
+    border: none;
+    padding: 10px 5%;
+}

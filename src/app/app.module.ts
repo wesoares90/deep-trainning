@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { ExerciseDetailComponent } from './exercise-detail/exercise-detail.component';
 import { ExerciseListComponent } from './exercise-list/exercise-list.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ExerciseListComponent } from './exercise-list/exercise-list.component';
     HeaderComponent,
     HomeComponent,
     ExerciseDetailComponent,
-    ExerciseListComponent
+    ExerciseListComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

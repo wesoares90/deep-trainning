@@ -1,0 +1,31 @@
+<app-header class="header" [active]="'Treinos'"></app-header>
+<div class="container">
+    <div class="col-md-12">
+        <ul>
+            <li class="bg-todos">
+                <a [routerLink]="['/lista-de-exercicios', 'todos' ]">Todos os treinos</a>
+            </li>
+            <li class="bg-peito">
+                <a [routerLink]="['/lista-de-exercicios', 'peito' ]">Peito</a>
+            </li>
+            <li class="bg-perna">
+                <a [routerLink]="['/lista-de-exercicios', 'perna' ]">Perna</a>
+            </li>
+            <li class="bg-ombro">
+                <a [routerLink]="['/lista-de-exercicios', 'ombro' ]">Ombro</a>
+            </li>
+            <li class="bg-costa">
+                <a [routerLink]="['/lista-de-exercicios', 'costa' ]">Costa</a>
+            </li>
+            <li class="bg-triceps">
+                <a [routerLink]="['/lista-de-exercicios', 'triceps' ]">triceps</a>
+            </li>
+            <li class="bg-biceps">
+                <a [routerLink]="['/lista-de-exercicios', 'biceps' ]">biceps</a>
+            </li>
+            <li class="bg-alongamento">
+                <a [routerLink]="['/lista-de-exercicios', 'alongamento' ]">Alongamento</a>
+            </li>
+        </ul>
+    </div>
+</div>
